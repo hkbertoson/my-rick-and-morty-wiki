@@ -22,6 +22,10 @@ export default function Character({data}) {
 			<Head>
 				<title>{name}</title>
 				<meta name="description" content="Rick and Morty Wiki" />
+				<script
+					async
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
+					crossorigin="anonymous"></script>
 			</Head>
 
 			<main className={styles.main}>

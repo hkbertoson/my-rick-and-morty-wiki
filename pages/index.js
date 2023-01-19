@@ -81,6 +81,10 @@ export default function Home({data}) {
 				<title>Wubba Lubba Dubb Dub!</title>
 				<meta name="description" content="Rick and Morty Wiki" />
 				<link rel="icon" href="/favicon.ico" />
+				<script
+					async
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
+					crossorigin="anonymous"></script>
 			</Head>
 
 			<main className={styles.main}>
