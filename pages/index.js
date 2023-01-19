@@ -3,6 +3,7 @@ import Image from 'next/image';
 import {useState, useEffect} from 'react';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Script from 'next/script';
 
 const defaultEndpoint = 'https://rickandmortyapi.com/api/character';
 
@@ -81,10 +82,17 @@ export default function Home({data}) {
 				<title>Wubba Lubba Dubb Dub!</title>
 				<meta name="description" content="Rick and Morty Wiki" />
 				<link rel="icon" href="/favicon.ico" />
-				<script
+				<Script
+					id="Adsense-id"
+					data-ad-client="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
 					async
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
-					crossorigin="anonymous"></script>
+					strategy="afterInteractive"
+					onError={(e) => {
+						console.error('Script failed to load', e);
+					}}
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+				/>
+				;
 			</Head>
 
 			<main className={styles.main}>

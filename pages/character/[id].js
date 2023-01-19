@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../../styles/Home.module.css';
 import Link from 'next/link';
+import Script from 'next/script';
 
 const defaultEndpoint = 'https://rickandmortyapi.com/api/character';
 
@@ -22,10 +23,17 @@ export default function Character({data}) {
 			<Head>
 				<title>{name}</title>
 				<meta name="description" content="Rick and Morty Wiki" />
-				<script
+				<Script
+					id="Adsense-id"
+					data-ad-client="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
 					async
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
-					crossorigin="anonymous"></script>
+					strategy="afterInteractive"
+					onError={(e) => {
+						console.error('Script failed to load', e);
+					}}
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+				/>
+				;
 			</Head>
 
 			<main className={styles.main}>
