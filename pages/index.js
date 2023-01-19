@@ -82,19 +82,18 @@ export default function Home({data}) {
 				<title>Wubba Lubba Dubb Dub!</title>
 				<meta name="description" content="Rick and Morty Wiki" />
 				<link rel="icon" href="/favicon.ico" />
-				<Script
-					id="Adsense-id"
-					data-ad-client="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
-					async
-					strategy="afterInteractive"
-					onError={(e) => {
-						console.error('Script failed to load', e);
-					}}
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-				/>
-				;
 			</Head>
-
+			<Script
+				id="Adsense-id"
+				data-ad-client="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
+				async
+				strategy="afterInteractive"
+				onError={(e) => {
+					console.error('Script failed to load', e);
+				}}
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+			/>
+			;
 			<main className={styles.main}>
 				<h1 className={styles.title}>Wubba Lubba Dubb dub!</h1>
 				<form className="search" onSubmit={handleOnSubmitSearch}>
@@ -121,7 +120,6 @@ export default function Home({data}) {
 					<button onClick={handleLoadMore}>Load More</button>
 				</p>
 			</main>
-
 			<footer className={styles.footer}>
 				<a
 					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

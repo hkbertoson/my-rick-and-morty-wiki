@@ -23,19 +23,18 @@ export default function Character({data}) {
 			<Head>
 				<title>{name}</title>
 				<meta name="description" content="Rick and Morty Wiki" />
-				<Script
-					id="Adsense-id"
-					data-ad-client="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
-					async
-					strategy="afterInteractive"
-					onError={(e) => {
-						console.error('Script failed to load', e);
-					}}
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-				/>
-				;
 			</Head>
-
+			<Script
+				id="Adsense-id"
+				data-ad-client="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9361134933535166"
+				async
+				strategy="afterInteractive"
+				onError={(e) => {
+					console.error('Script failed to load', e);
+				}}
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+			/>
+			;
 			<main className={styles.main}>
 				<h1 className={styles.title}>{name}</h1>
 				<div className="profile">
